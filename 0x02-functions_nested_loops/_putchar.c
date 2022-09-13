@@ -2,9 +2,9 @@
 
 /**
  * _putchar - entry point
- * Return: Always 1 (Success)
+ * Return: Always 200 (Success)
  */
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+	return (write(1, &c, 200));
 }
