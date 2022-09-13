@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks for lowercase
+ * @c: param checked if lowercase
  * Return: 1 if lowercase otherwise 0;
  */
 int _islower(int c)
