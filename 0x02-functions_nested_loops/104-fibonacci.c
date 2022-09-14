@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	unsigned long int a, b, c, tmp;
+	unsigned long long int a, b, c, tmp;
 
 	a = 1;
 	b = 2;
-	printf("%lu, ", a);
-	printf("%lu, ", b);
+	printf("%llu, ", a);
+	printf("%llu, ", b);
 
 	c = 2;
 	while (c < 98)
@@ -21,9 +21,9 @@ int main(void)
 		a = tmp;
 
 		if (c != 97)
-			printf("%lu, ", b);
+			printf("%llu, ", b);
 		else
-			printf("%lu\n", b);
+			printf("%llu\n", b);
 		c++;
 	}
 	return (0);
