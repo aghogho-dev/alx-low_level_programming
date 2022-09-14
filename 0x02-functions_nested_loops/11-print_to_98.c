@@ -2,6 +2,8 @@
 
 /**
  * print_to_98 - print up to 98
+ * if_one - check if condtions
+ * if_two - check if conditions
  * @n: starting point
  * Return: void;
  */
@@ -25,7 +27,13 @@ void if_one(int n)
 	else
 	{
 		_putchar('-');
-		if (n <= -10)
+		if (n <= -100)
+		{
+			_putchar(((n / 10) / 10) * -1 + '0');
+			_putchar(((n / 10) % 10) * -1 + '0');
+			_putchar((-1 * n % 10) + '0');
+		}
+		else if (n <= -10 && n > - 100)
 		{
 			_putchar((-1 * n / 10) + '0');
 			_putchar((-1 * n % 10) + '0');
