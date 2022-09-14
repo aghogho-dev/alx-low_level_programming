@@ -31,7 +31,7 @@ void if_one(int n)
 			_putchar(((-1 * n / 10) % 10) + '0');
 			_putchar((-1 * n % 10) + '0');
 		}
-		else if (n <= -10 && n > - 100)
+		else if (n <= -10 && n > -100)
 		{
 			_putchar((-1 * n / 10) + '0');
 			_putchar((-1 * n % 10) + '0');
