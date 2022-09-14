@@ -26,4 +26,5 @@ int main(void)
 			printf("%ld\n", b);
 		c++;
 	}
+	return (0);
 }
