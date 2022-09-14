@@ -2,7 +2,7 @@
 
 /**
  * _abs - finds absolute value
- *
+ * @n: check this abs
  * Return: Always int
  */
 int _abs(int n)
