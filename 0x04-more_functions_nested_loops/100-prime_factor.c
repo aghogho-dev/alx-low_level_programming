@@ -13,12 +13,12 @@ int main(void)
 	max = 2;
 	c = 1;
 
-	for (a = 2; a < n; a++)
+	for (a = 2; a < sqrt(n) * 2; a++)
 	{
-		if (n % a == 0)
+		if ((n % a) == 0)
 		{
 			for (b = 2; b < a; b++)
-				if (a % b == 0)
+				if ((a % b) == 0)
 				{
 					c = 0;
 					break;
