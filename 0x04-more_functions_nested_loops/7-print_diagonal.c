@@ -2,8 +2,7 @@
 
 /**
  * print_diagonal - print along diag
- * @n: param
- * Return: void
+ * @n: param diag
  */
 
 void print_diagonal(int n)
