@@ -13,7 +13,7 @@ int main(void)
 	max = 2;
 	c = 1;
 
-	for (a = 2; a < sqrt(n) * 2; a++)
+	for (a = 2; a < sqrt(n) * 500; a++)
 	{
 		if ((n % a) == 0)
 		{
