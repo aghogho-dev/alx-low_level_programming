@@ -17,7 +17,7 @@ int len_str(char *s)
 }
 
 /**
- * rev_string = rev a str
+ * rev_string - rev a str
  * @s: str
  * Return: void
  */
