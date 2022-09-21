@@ -18,4 +18,5 @@ int main(void)
 	}
 	ar[13] = '\0';
 	printf("%s\n", ar);
+	return (0);
 }
