@@ -5,6 +5,7 @@
  * @s: str
  * Return: int
  */
+
 int len_str(char *s)
 {
 	int i;
@@ -17,10 +18,11 @@ int len_str(char *s)
 }
 
 /**
- * rev_string - rev a str
- * @s: str
+ * rev_string - reverse str
+ * @s: str to reverse
  * Return: void
  */
+
 void rev_string(char *s)
 {
 	int i, j, ln;
