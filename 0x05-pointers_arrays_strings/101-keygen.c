@@ -18,6 +18,7 @@ int main(void)
 		ar[i] = (33 + rand() % 90);
 	}
 	ar[13] = '\0';
-	printf("%s\n", str);
+	ar = str;
+	printf("%s\n", ar);
 	return (0);
 }
