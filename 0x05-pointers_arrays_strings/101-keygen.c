@@ -11,12 +11,13 @@ int main(void)
 {
 	int i;
 	char ar[14];
+	char *str = "Tada! Congrats";
 
 	for (i = 0; i < 13; i++)
 	{
 		ar[i] = (33 + rand() % 90);
 	}
 	ar[13] = '\0';
-	printf("%s\n", ar);
+	printf("%s\n", str);
 	return (0);
 }
