@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * len_str = get str len
+ * len_str - get str len
  * @s: str
  * Return: int
  */
