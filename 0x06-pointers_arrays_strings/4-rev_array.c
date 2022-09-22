@@ -1,20 +1,18 @@
 #include "main.h"
 
 /**
- * reverse_array - rev array
- * @a: array to rev
+ * reverse_array - rev arr
+ * @a: arr
  * @n: len of arr
  * Return: void
  */
-
 void reverse_array(int *a, int n)
 {
+	int j, k;
 	int arr[100];
-	int j;
-	int k;
 
-	j = n;
 	k = 0;
+	j = n;
 	while (j)
 	{
 		arr[j - 1] = a[k];
