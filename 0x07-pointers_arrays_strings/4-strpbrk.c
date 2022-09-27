@@ -11,6 +11,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int a, b, i, j;
+	char *p = NULL;
 
 	for (i = 0; s[i]; i++)
 	{
@@ -24,6 +25,6 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 	if (b)
-		return (s + b);
-	return (NULL);
+		p = (s + b);
+	return (p);
 }
