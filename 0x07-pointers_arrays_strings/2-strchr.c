@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stddef.h>
 
 /**
  * *_strchr - locate first occurence of chr
@@ -10,6 +10,7 @@
 char *_strchr(char *s, char c)
 {
 	int i, j;
+	char *p = NULL;
 
 	j = 0;
 	while (s[j] != '\0')
@@ -17,6 +18,9 @@ char *_strchr(char *s, char c)
 
 	for (i = 0; i < j; i++)
 		if (s[i] == c)
-			return (s + i);
-	return (NULL);
+		{
+			p = (s + i);
+			break;
+		}
+	return (p);
 }
