@@ -10,23 +10,16 @@
 
 char *_strchr(char *s, char c)
 {
-	int i, j, k;
-	char ar[100];
-	char *ppt = NULL;
+	int i, j;
+	char *ptr = NULL;
 
 	j = 0;
 	while (s[j] != '\0')
 		j++;
 
-	i = 0;
-	while ((s[i] != c) && (i < j))
-		i++;
+	for (i = 0; i < j; i++)
+		if (s[i] == c)
+			ptr = s + i;
 
-	if (i != j)
-	{
-		for (k = i; k < j; k++)
-			ar[k - i] = s[k];
-		ppt = ar;
-	}
-	return (ppt);
+	return (ptr);
 }
