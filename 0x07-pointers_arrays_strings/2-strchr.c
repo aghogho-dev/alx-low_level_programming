@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * *_strchr - return first occurence of char
@@ -11,7 +12,7 @@ char *_strchr(char *s, char c)
 {
 	int i, j, k;
 	char ar[100];
-	char *ppt;
+	char *ppt = NULL;
 
 	j = 0;
 	while (s[j] != '\0')
@@ -27,5 +28,5 @@ char *_strchr(char *s, char c)
 			ar[k - i] = s[k];
 		ppt = ar;
 	}
-	return ppt;
+	return (ppt);
 }
