@@ -6,7 +6,7 @@
  * @p: try this
  * Return: int
  */
-int find_sqrt(int n, int*p)
+int find_sqrt(int n, int *p)
 {
 	if (*p * *p == n)
 	{
