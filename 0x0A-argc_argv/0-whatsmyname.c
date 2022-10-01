@@ -4,7 +4,7 @@
 /**
  * main - entry point
  * @argc: num of args
- * @agrv: args vector
+ * @argv: args vector
  * Return: int
  */
 int main(int argc, char **argv)
