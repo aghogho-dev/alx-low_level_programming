@@ -8,7 +8,7 @@
  * @argv: args vector
  * Return: int
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int i = 1;
 	int sum = 1;
