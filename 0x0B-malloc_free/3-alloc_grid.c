@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grid(int width, int height)
+ * **alloc_grid - alloc grid
  * @width: param
  * @height: param
  * Return: int **
@@ -15,7 +15,7 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	p = malloc(sizeof(int *) * height);
+	p = malloc(sizeof(int) * height);
 
 	if (p == NULL)
 		return (NULL);
