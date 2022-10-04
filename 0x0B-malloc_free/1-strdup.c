@@ -1,0 +1,32 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * *_strdup - func
+ * @str: str
+ * Return: char * or NULL
+ */
+char *_strdup(char *str)
+{
+	unsigned int i, j;
+	char *s;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+
+	s = malloc(sizeof(char) * i);
+
+	if (s == NULL)
+		return (NULL);
+
+	j = 0;
+	while (j < i)
+	{
+		s[j] = str[j];
+		j++;
+	}
+	s[i] = '\0';
+
+	return (s);
+}
