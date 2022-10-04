@@ -7,7 +7,6 @@
  * @av: args vec
  * Return: char **
  */
-
 char *argstostr(int ac, char **av)
 {
 	int i, j, k, m;
@@ -15,7 +14,6 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
 	k = ac;
 	i = 0;
 	while (i < ac)
@@ -28,12 +26,9 @@ char *argstostr(int ac, char **av)
 		}
 		i++;
 	}
-
 	s = malloc(sizeof(char) * (k + 1));
-
 	if (s == NULL)
 		return (NULL);
-
 	m = 0;
 	i = 0;
 	while (i < ac)
@@ -41,16 +36,12 @@ char *argstostr(int ac, char **av)
 		j = 0;
 		while (av[i][j])
 		{
-			s[m] = av[i][j];
-			m++;
+			s[m++] = av[i][j];
 			j++;
 		}
 		i++;
-		s[m] = '\n';
-		m++;
+		s[m++] = '\n';
 	}
-
 	s[k] = '\0';
-
 	return (s);
 }
