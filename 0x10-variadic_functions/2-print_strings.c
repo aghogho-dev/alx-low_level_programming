@@ -31,17 +31,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (separator && s)
 			printf("%s%s", s, separator);
 		else if (separator && !s)
-		{
-			printf("nil\n");
-			return;
-		}
+			printf("%s%s", "nil", separator);
 		else if (!separator && s)
 			printf("%s", s);
 		else
-		{
-			printf("nil\n");
-			return;
-		}
+			printf("nil");
 	}
 	s = va_arg(p, char*);
 	if (s)
