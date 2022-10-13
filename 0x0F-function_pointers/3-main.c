@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 
 	if (!num1 || !num2 || !get_op_func(op))
 	{
-		print("Error\n");
+		printf("Error\n");
 		exit(99);
 	}
 
