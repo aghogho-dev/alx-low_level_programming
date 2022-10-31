@@ -8,26 +8,23 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int op, wr, i, k = 0;
+	int i, file, cls;
 
+	i = 0;
 	if (!filename)
 		return (-1);
 
+	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (file == -1)
+		return (-1);
 	if (!text_content)
 	{
-		for (i = 0; text_content[i]; i++)
-		{
-			k++;
-		}
+		while (text_content[i])
+			i++;
+		write(file, text_content, i);
 	}
-	op = open(filename, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR);
-	wr = write(op, text_content, i);
-
-	if (op == -1 || wr == -1)
-		return (-1);
-
-	k = close(op);
-	if (k == -1)
+	cls = close(file);
+	if (cls == -1)
 		return (-1);
 	return (1);
 }
