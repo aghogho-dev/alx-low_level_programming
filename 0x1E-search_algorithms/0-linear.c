@@ -5,6 +5,8 @@
  * @array: Pointer to the array element
  * @size: Size of array
  * @value: Search for this
+ *
+ * Return: -1 or index
  */
 int linear_search(int *array, size_t size, int value) {
 	size_t i;
